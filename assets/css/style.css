@@ -62,7 +62,7 @@ body {
     background: #ffffff;
     border-bottom: 2px solid #cccccc;
   }
-  
+
   #logo {
     float: left;
     width: 250px;
@@ -82,8 +82,13 @@ body {
     margin-top: 25px;
   }
   
+  .nav-item {
+    padding-top: 8.5%;
+    margin-right: 15px;
+  }
+
+  .nav-item,
   nav a {
-    display: inline-block;
     padding-left: 15px;
     margin-left: 15px;
     line-height: 18px;
@@ -215,4 +220,35 @@ body {
     background: #4aaaa5;
     border: 0 none;
   }
-  
+
+
+  @media screen and (max-width: 768px) {
+
+  }
+
+    /* Force logo to expand out as viewport shrinks*/
+ 
+    @media screen and (max-width: 640px) {
+
+      #masthead {
+        position: relative;
+      }
+
+      #logo {
+        width: 100%;
+      }
+
+      .navbar,
+      .navbar-nav{
+      padding-left: 6%;
+      padding-right: 8%;
+      overflow: auto;
+      float: none;
+      font-size: 120%;
+      }
+
+      .navbar-nav {
+        text-align: center;
+      }
+
+    }
